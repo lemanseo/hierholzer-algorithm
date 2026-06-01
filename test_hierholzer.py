@@ -67,22 +67,22 @@ class TestHierholzerAlgorithm(unittest.TestCase):
         self.assertTrue(is_valid_eulerian_cycle(n, edges, cycle))
 
     def test_eulerian_graph_with_five_vertices(self):
-    n = 5
-    edges = [
-        (0, 1),
-        (1, 2),
-        (2, 3),
-        (3, 4),
-        (4, 0),
-        (0, 2),
-        (2, 4),
-        (4, 0),
-    ]
-
-    cycle = find_eulerian_cycle(n, edges)
-
-    self.assertTrue(has_eulerian_cycle(n, edges))
-    self.assertTrue(is_valid_eulerian_cycle(n, edges, cycle))
+        n = 5
+        edges = [
+            (0, 1),
+            (1, 2),
+            (2, 3),
+            (3, 4),
+            (4, 0),
+            (0, 2),
+            (2, 4),
+            (4, 0),
+        ]
+    
+        cycle = find_eulerian_cycle(n, edges)
+    
+        self.assertTrue(has_eulerian_cycle(n, edges))
+        self.assertTrue(is_valid_eulerian_cycle(n, edges, cycle))
 
 
 if __name__ == "__main__":
